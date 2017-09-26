@@ -15,7 +15,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.handleTermChange('chihuahua');
+    this.handleTermChange('germanshepherd');
   }
 
   handleTermChange(term) {
