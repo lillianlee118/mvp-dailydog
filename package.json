@@ -1,0 +1,43 @@
+{
+  "name": "mvp",
+  "version": "1.0.0",
+  "description": "search for dogs pics by breed",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified!\" && exit 1",
+    "build": "webpack",
+    "server": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "lillian lee",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.2",
+    "redux-devtools": "^3.4.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "express": "^4.15.5",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "pet-finder-api": "^1.0.1",
+    "petfinder": "^0.1.1",
+    "react-scripts": "^1.0.13",
+    "superagent": "^3.6.0",
+    "underscore": "^1.8.3"
+  }
+}

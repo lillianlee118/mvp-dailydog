@@ -1,0 +1,10 @@
+## Mac OSX ##
+.DS_Store
+
+## API keys ##
+src/config/petfinder.js
+
+## NPM ##
+node_modules/
+
+dist/bundle.js
