@@ -4,6 +4,7 @@ import DogList from './components/DogList';
 import Search from './components/Search';
 import request from 'superagent';
 import './styles/styles.css';
+import '../img/logo.png';
 
 class App extends Component {
   constructor(){
@@ -11,14 +12,14 @@ class App extends Component {
     this.state = {
       pics: [],
     }
-    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   };
 
   componentDidMount() {
-    this.handleTermChange('germanshepherd');
+    this.handleChange('corgi');
   }
 
-  handleTermChange(term) {
+  handleChange(term) {
     const url = `http://dog.ceo/api/breed/${term}/images`;
     request.get(url, (err, res) => {
       this.setState({pics: res.body.message.slice(0, 30)});
@@ -27,13 +28,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-          <div className="col-md-6 offset-md-3">
-            <div className='title' value='Daily Dogs'>
-            <Search onChange={this.handleTermChange}/>
-            <DogList pics={this.state.pics}/>
-            </div>
-          </div>
+      <div className='container'>
+        {/* <img className='logo' src="https://dog.ceo/img/dog-api-logo.svg" /> */}
+        <div className='title'>Fetcher</div>
+        <div>
+          <Search onChange={this.handleChange}/>
+          <DogList pics={this.state.pics}/>
+        </div>
       </div>
     )
   }

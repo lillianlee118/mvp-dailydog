@@ -13,11 +13,16 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div className="search">
-        <div className='searchbar'>Enter breed:</div>
-        <input onChange={event => this.onInputChange(event.target.value)} />
-      </div>
-    );
+      <nav>
+        <div className='search'>
+          <div className='searchbar'>Enter a breed:</div>
+          <input onChange={event => this.onInputChange(event.target.value)} />
+          <div className='button'>
+            <button>Search</button>
+          </div>
+        </div>
+      </nav>
+    )
   }
 }
 
