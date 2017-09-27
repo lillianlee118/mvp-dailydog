@@ -15,10 +15,12 @@ class Search extends React.Component {
     return (
       <nav>
         <div className='search'>
+          <div className='line'></div>
+          <br/>
           <div className='searchbar'>Enter a breed:</div>
           <input onChange={event => this.onInputChange(event.target.value)} />
           <div className='button'>
-            <button>Search</button>
+            <br/>
           </div>
         </div>
       </nav>

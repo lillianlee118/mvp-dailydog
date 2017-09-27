@@ -15,9 +15,10 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
   };
 
-  componentDidMount() {
-    this.handleChange('corgi');
-  }
+//can render when loaded
+  // componentDidMount() {
+  //   this.handleChange('corgi');
+  // }
 
   handleChange(term) {
     const url = `http://dog.ceo/api/breed/${term}/images`;
@@ -29,7 +30,6 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        {/* <img className='logo' src="https://dog.ceo/img/dog-api-logo.svg" /> */}
         <div className='title'>Fetcher</div>
         <div>
           <Search onChange={this.handleChange}/>

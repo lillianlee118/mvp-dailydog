@@ -1,6 +1,7 @@
 .app {
   margin: 10px auto;
   width: 70%;
+  outline: #00FF00 dotted;
 }
 
 .title {
@@ -16,11 +17,11 @@
 }
 
 .dog-item {
-  box-shadow: 1px 1px 1px 1px white;
+  box-shadow: 2px 2px 2px 2px white;
   box-sizing: border-box;
   display: inline-block;
-  margin: 0 0 0em;
-  padding: 0;
+  margin: 0 0 1em;
+  padding: 1em;
   width: 100%;
 }
 
@@ -31,13 +32,15 @@
 .dog-list {
   column-gap: 1em;
   font-size: .85em;
-  margin: .5em 0;
+  margin: 1em 6em;
   padding: 0;
 }
 
 .searchbar {
   font-size: 20px;
   text-align: center;
+  font-family: monospace;
+  /*background-color: black;*/
 
 }
 
@@ -46,16 +49,21 @@
   font-family: monospace;
   padding: 1px;
   border-radius: 6px;
+}
 
+.line {
+  background-color: navy;
+  height: 3px;
 }
 
 input {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
+  font-family:monospace;
   height: 25px;
   margin: 0 auto;
   text-align: center;
-  width: 20%;
+  width: 16%;
 }
 
 @media only screen and (min-width: 400px) {
