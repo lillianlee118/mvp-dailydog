@@ -1,9 +1,9 @@
 import React, {Component} from 'React';
 
-const DogItem = (image) => {
+const DogItem = ({pic, onPicSelect}) => {
   return (
-    <div className='dog-item'>
-      <img src={image.pic} />
+    <div className='dog-item' onClick={() => onPicSelect(pic)}>
+      <img src={pic} />
     </div>
   )
 };

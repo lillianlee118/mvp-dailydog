@@ -36,6 +36,7 @@
     "fs": "0.0.1-security",
     "pet-finder-api": "^1.0.1",
     "petfinder": "^0.1.1",
+    "react-modal": "^2.3.2",
     "react-scripts": "^1.0.13",
     "superagent": "^3.6.0",
     "underscore": "^1.8.3"

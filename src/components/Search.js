@@ -17,9 +17,9 @@ class Search extends React.Component {
         <div className='search'>
           <div className='line'></div>
           <br/>
-          <div className='searchbar'>Enter a breed:</div>
-          <input onChange={event => this.onInputChange(event.target.value)} />
-          <div className='button'>
+          <div className='searchbar'></div>
+          <input placeholder="Enter a breed here!" onChange={event => this.onInputChange(event.target.value)} />
+          <div>
             <br/>
           </div>
         </div>

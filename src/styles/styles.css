@@ -47,23 +47,40 @@
 .button {
   text-align: center;
   font-family: monospace;
-  padding: 1px;
+  padding: 10px 20px;
   border-radius: 6px;
+  background-color: white;
+  border: 2px solid navy;
 }
+
+.button:hover {
+  background-color: gray;
+  color: white;
+}
+
 
 .line {
   background-color: navy;
   height: 3px;
 }
 
+.pic-modal {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    bottom: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 input {
   display: block;
   font-size: 18px;
   font-family:monospace;
-  height: 25px;
+  height: 33px;
   margin: 0 auto;
   text-align: center;
-  width: 16%;
+  width: 30%;
 }
 
 @media only screen and (min-width: 400px) {
